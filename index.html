@@ -1,12 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>UX/UI Homework 20</title>
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bitter" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 </head>
-<body>
-    
+
+<body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    <header>
+        <div class="logo pt-5 pb-4">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <!-- <div class="menuBar">
+            <ul class="navItems">
+                <li class="nav"><a href="index.html">Work</a></li>                
+                <li class="nav"><a href="indexAbout.html">About</a></li>
+                <li class="nav"><a href="indexContact.html">Contact</a></li>
+            </ul>
+        </div> -->
+
+        <ul class="nav justify-content-center" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <li class="nav-item pr-5">
+                <a class="nav-link active" href="https://mel11e.github.io/UX_UI_HW_19/">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pr-5" href="https://mel11e.github.io/UX_UI_HW_19/indexAbout.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://mel11e.github.io/UX_UI_HW_19/indexContact.html">Contact</a>
+            </li>
+        </ul>
+    </header>
+
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">
+            <img src="images/left-arrow.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            PERVIOUS
+        </a>
+        <a class="navbar-brand ml-auto" href="#">
+            <img style="float:right" src="images/right-arrow.svg" width="30" height="30"
+                class="d-inline-block align-top" alt="">
+            NEXT
+        </a>
+    </nav>
+
+    <div class="curated_hero">
+        <h1 class="text-center">Curated Mobile App Case Study</h1>
+        <img src="images/Curated Hero Image.jpg" class="img-fluid" alt="Responsive image">
+    </div>
+
+    <nav class="nav nav-fill pb-5">
+        <a class="nav-item nav-link active" href="#Research">
+            <h4>RESEARCH</h4>
+        </a>
+        <a class="nav-item nav-link" href="#Definition">
+            <h4>DEFINITION</h4>
+        </a>
+        <a class="nav-item nav-link" href="#Ideation">
+            <h4>IDEATION</h4>
+        </a>
+        <a class="nav-item nav-link" href="#Prototyping">
+            <h4>PROTOTYPING</h4>
+        </a>
+        <a class="nav-item nav-link" href="#Testing">
+            <h4>TESTING</h4>
+        </a>
+        <a class="nav-item nav-link" href="#Conclusion">
+            <h4>CONCLUSION</h4>
+        </a>
+    </nav>
+
+    <div style="height: auto; background-color: #EAD7C6;">
+        <div class="row align-items-center">
+            <div class="col text-center p-4">
+                <h4>Role</h4>
+                <p class="mb-0">UX/UI Designer, UX Researcher</p>
+                <p class="mb-0">(Team: 3 Members)</p>
+            </div>
+            <div class="col text-center p-4">
+                <h4>Duration</h4>
+                <p>3 Weeks</p>
+            </div>
+            <div class="col text-center p-4">
+                <h4>Platform</h4>
+                <p>Mobile</p>
+            </div>
+        </div>
+
+        <hr style="background-color: #E75548; width: 35%; height: 5px;" class="align-self-center; mt-0 mb-0" />
+
+        <div class="col text-center p-4">
+            <h4>Tools</h4>
+            <p>Adobe XD, InVision, Miro, Survey Monkey</p>
+        </div>
+
+    </div>
+
+    <div style="height: auto">
+        <div class="p-5">
+            <h3>The Problem</h3>
+            <hr style="background-color: black; width: 35%; height: 2px" class="ml-0" />
+            <p>Curated was designed to achieve a new way for users to discover new artists and to stay up-to-date on
+                events, news, and trends. We have observed that art enthusiasts are not feeling connected to the arts
+                community, which is causing users to miss out on artist’s events and news. How might we improve an art
+                enthusiast’s awareness of trends, local events, while generating a customized list of preferred artists?
+            </p>
+        </div>
+    </div>
+
+    <div style="height: auto; background-color: #EFA68B; p-5">
+        <div class="p-5">
+            <h3>The Solution</h3>
+            <hr style="background-color: black; width: 35%; height: 2px" class="ml-0" />
+            <p>To solve the problem a mobile app was created to help art seeking individuals connect with local artists,
+                find events, learn about art, and have a customized usability experience with the app using AI. Research
+                was conducted to identify goals and pain points which art enthusiasts experience frequently.</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="process pl-5 pr-5">
+        <div class="text-center p-5">
+            <h3>The Process</h3>
+        </div>
+        <div class="line1 phase">
+            <div class="row list">
+                <em class="col-sm-auto align-self-center"><u>01</u></em>
+                <h4 id="Research">Research</h4>
+            </div>
+            <div>
+                <p class="offset-md-1">To begin the investiagtion, we created a questionnaire using Survey Monkey to
+                    gather
+                    qualitative data and conducted five one-on-one user interviews online over Zoom. Both questionnaire
+                    and user interviews focused mainly on the users level of
+                    art knowledge; art trends and news; reasons, purpose, and goals for attending art exhibits and
+                    museums. While other questions were asked to collect
+                    demographic data for our user persona. We also investiaged traveling pain points and preference
+                    UI interactions while using a mobile app. We also conducted a competitor analysis to find strentghs
+                    and weakness.</p>
+            </div>
+            <h5 class="text-center p-2 pt-4 font-weight-bold">User Demographics</h5>
+            <div class="container p-4 pt-2">
+                <div class="pl-5 pr-5">
+                    <img src="images/curated-demographics.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+            <div class="container p-4 pt-5">
+                <h5 class="text-center p-2 font-weight-bold">Key Findings</h5>
+                <div class="pl-5 pr-5" style=" text-indent: -1em;">
+                    <li>
+                        The majority of participants want to be updated on the latest news about art.
+                    </li>
+                    <li>All participants expressed frustration when they missed
+                        an art exhibit, because they
+                        had no knowledge of it until
+                        the exhibit expired.</li>
+                    <li>Favorite app features include: ability to identify art, learn about the artists, locate art
+                        events, receive suggestions, and alerts about upcoming art events.</li>
+                    <li>All participants want to learn more about artists.</li>
+                    <li>Majority of participants are Apple mobile users.</li>
+                </div>
+            </div>
+            <div class="container p-4 pt-5">
+                <h5 class="text-center p-2 font-weight-bold">Comparative Analysis</h5>
+                <p class="text-center">Market research was conducted on our competitors.</p>
+                <div class="pl-5 pr-5">
+                    <img src="images/curated-analysis.png" class="img-fluid" alt="Responsive image">
+                    <img src="images/curated-weak.png" class="img-fluid pt-3" alt="Responsive image">
+                </div>
+            </div>
+
+
+            <div class="row list pt-5">
+                <em class="col-sm-auto align-self-center"><u>02</u></em>
+                <h4 id="Definition">Definition</h4>
+            </div>
+            <div>
+                <p class="offset-md-1">Using definition tools we pulled togther the data collected during our research
+                    to build a user persona to help us focus on what our typical user is for our mobile app. Bring all
+                    the information together we
+                    discovered the user insight for our case study.</p>
+            </div>
+            <div class="container p-4 pt-5">
+                <h5 class="text-center p-2 font-weight-bold">Affinity Map</h5>
+                <p class="text-center">Responses was sorted into key clusters.</p>
+                <div class="pl-5 pr-5">
+                    <img src="images/curated-affinity.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+            <div class="container p-4 pt-5">
+                <h5 class="text-center p-2 font-weight-bold">User Persona</h5>
+                <p class="text-center">From the data collect we produced the following user poersona.</p>
+                <div class="pl-5 pr-5">
+                    <img src="images/Curated-User-Persona.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+            <div class="pt-5"></div>
+            <div class="container p-4 align-self-center col-4" style="background-color: #EFA68B">
+                <h5 class="text-center p-2 font-weight-bold">User Insight</h5>
+                <div class="pl-5 pr-5">
+                    <p>Art enthusiasts need a better way to discover artists and stay up to date on art events and news
+                        because they feel disconnected from the arts community and often miss important exhibits as a
+                        result.</p>
+                </div>
+            </div>
+
+
+            <div class="row list pt-5">
+                <em class="col-sm-auto align-self-center"><u>03</u></em>
+                <h4 id="Ideation">Ideation</h4>
+            </div>
+            <div>
+                <p class="offset-md-1">In order to decide what features would be most important and useful for
+                    our users, we took our user insight, data from our research, and our competitor analysis and placed
+                    our findings into a I Like, I Wish, I Want table and
+                    constructed a feature prioritization matrix for mobile app.</p>
+                <div class="container p-4 pt-5">
+                    <h5 class="text-center p-2 font-weight-bold">I Like, I Wish, I Want . . .</h5>
+                    <p class="text-center">Results were then separated into desirable levels the users expressed.</p>
+                    <div class="pl-5 pr-5">
+                        <img src="images/curated-i like.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <div class="container p-4 pt-5">
+                    <h5 class="text-center p-2 font-weight-bold">Feature Prioritization Matrix</h5>
+                    <p class="text-center">In order to construct our mobile app, user perferred features were placed in
+                        a
+                        prioritization matrix.</p>
+                    <div class="pl-5 pr-5">
+                        <img src="images/curated-matrix.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <div>
+                    <p class=" container p-4 align-self-center col-6 bg-light grey align-self-center mt-5">During the
+                        ideation part of our process we created a storyboard
+                        and journey map to shape our persona's journey to discover additional user needs and find
+                        oppoutunities to further develop our design.</p>
+                </div>
+                <div class="container p-4 pt-5">
+                    <div class="pl-5 pr-5">
+                        <h5 class="text-center p-2 font-weight-bold">Storyboard</h5>
+                        <img src="images/curated-storyboard.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <div class="container p-4 pt-5">
+                    <div class="row justify-content-center">
+                        <div class="col-6 pl-5 pr-5 bg-light">
+                            <h5 class="text-center p-2 font-weight-bold">User Scenario</h5>
+                            <p>James is on a business trip in New York City and has some free time in
+                                between meetings. He wants to visit a local museum, but he’s not sure where to start
+                                looking. He
+                                doesn’t like using main stream social media for searching. He messages a colleague,
+                                knowing
+                                she’s worked in the city before, to see if she has suggestions. She tells him about a
+                                local
+                                museum in the area. James searches for the museum using an app and find the website. He
+                                purchases one ticket. He uses a different app to help him locate the museum. Once he is
+                                at
+                                the
+                                museum, James wants to learn more about a painting he sees and about the artist. He
+                                using a
+                                different app to search the name of the painting. After the museum visit he leaves a
+                                review.
+                            </p>
+                        </div>
+
+                        <div class="col-6 pl-5 pr-5 bg-light">
+                            <h5 class="text-center p-2 font-weight-bold">User Goal</h5>
+                            <p>James wants to find a local museum exhibit, but he is unfamiliar with his surroundings on
+                                his
+                                business trip. He downloads the app CURATED recommended by a colleague. James purchases
+                                a
+                                ticket on the app. He arrives at the museum and sees a painting he wants to learn more
+                                about. He uses the image recognition option of CURATED to pull up information about the
+                                painting and the artist.</p>
+
+                        </div>
+                    </div>
+                    <div class="container p-4 pt-5">
+                        <div class="pl-5 pr-5">
+                            <h5 class="text-center p-2 font-weight-bold">Journey Map</h5>
+                            <img src="images/curated-journey.png" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pl-5 pr-5">
+                <h5 class="text-center p-2 font-weight-bold">User Flow</h5>
+                <p class=" p-2 align-self-center">Gathering the
+                    results of our feature prioritization matrix and discovering the oppoutunities from the Journey Map
+                    we identified key features to use in our mobile design.</p>
+
+                <div class="pl-5 pr-5" style=" text-indent: -1em;">
+                    <p class="font-weight-bold ">Main Features</p>
+                    <li>Create an AI gamified quiz to help users have a personalized experience.</li>
+                    <li>Add an art scan feature to increase art knowledge while at an exhibit.</li>
+                    <li>Connect traveling art enthusiasts to art events by allowing users to purchasing tickets on the
+                        app.</li>
+                </div>
+                <p class="p-2 pt-4 align-self-center">The user flow created displays a user's complete path to engage
+                    with
+                    our art quiz, use the art scanning feature, as well as locate local art events.</p>
+                <img src="images/curated-userflow.png" class="img-fluid  pb-5" alt="Responsive image">
+
+            </div>
+
+
+            <div class="row list">
+                <em class="col-sm-auto align-self-center"><u>04</u></em>
+                <h4 id="Prototyping">Prototyping</h4>
+            </div>
+            <div>
+                <p class="offset-md-1">We create rough sketches to capture our main features in order for us to focus on
+                    the essential elements of design decisions. After evaluating our design we proceed to create a
+                    mid-fidlity protype to test on users. </p>
+            </div>
+            <div class="container p-4 pt-5">
+                <div class="pl-5 pr-5">
+                    <h5 class="text-center p-2 font-weight-bold">Wireframe Sketches</h5>
+                    <img src="images/curated-sketch.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="container p-4 pt-5">
+                <div class="pl-5 pr-5">
+                    <h5 class="text-center p-2 font-weight-bold">Mid-Fidility Prototype</h5>
+                    <img src="images/curated-mid.png" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="text-center">
+                    <div class="button">
+                        <a href="https://projects.invisionapp.com/share/PMZ7I1GGH52#/screens/435689141"><button
+                                class="submit">Go To Prototype</button></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row list">
+                <em class="col-sm-auto align-self-center"><u>05</u></em>
+                <h4 id="Testing">Testing</h4>
+            </div>
+            <div>
+                <p class="offset-md-1">We tested our mobile prototype on five users. We hoped to learn what areas of our
+                    designs were seamless as well as where we can improve user flow. Our testing focused on:</p>
+                <div class="pl-5 pr-5 offset-md-1" style=" text-indent: -1em;">
+                    <li>The onboarding process</li>
+                    <li>User understanding how the user profile quiz functions.</li>
+                    <li>Search for a museum or art gallery.</li>
+                    <li>Purchase tickets.</li>
+                    <li>Search for an artist.</li>
+                    <li>Find and use the art image scanning recognition feature.</li>
+                </div>
+                <div class=" offset-md-1 mt-5 mb-5 p-4" style="background-color: #EAD7C6">
+                    <h5 class="text-center p-2 font-weight-bold">Usability Testing Results</h5>
+                    <p class=" p-2 align-self-center">Our results showed that the onboarding process was seamless, yet
+                        one user experssed a desire to know why the app was asking for phone GPS access. When we tested
+                        our profile quiz, there was a lack of intuitive understanding when using the quiz. Some users
+                        committed that they need more of an explanation or tutorial on how to use the quiz before
+                        starting. Our last task of purchasing a ticket was easy for most of our users. However, one user
+                        committed that our naviagation bar looked similar to Instgram.</p>
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="row list">
+                <em class="col-sm-auto align-self-center"><u>06</u></em>
+                <h4 id="Conclusion">Conclusion</h4>
+            </div>
+            <div class=" offset-md-1 mt-3 p-4 mr-5">
+                <h5 class="text-center p-2 font-weight-bold">Key Take Aways</h5>
+                <div class="row">
+                    <div class="pl-5 pr-5 col-6" style=" text-indent: -1em;">
+                        <p class="font-weight-bold ">Pain Points for art enthusiasts include:</p>
+                        <li>Dislike missing art exhibits.</li>
+                        <li>Does not know where to find a specific artist’s work.</li>
+                        <li>A knowledge gap existing in art styles and movements.</li>
+                        <li>Lack of information about new artists, trends, and news.</li>
+                    </div>
+                    <div class="pl-5 pr-5 col-6">
+                        <p class="font-weight-bold ">CURATED seeks to solves this by connecting users to:</p>
+                        <div style=" text-indent: -1em;">
+                            <li>Information about budding artists.</li>
+                            <li>Details about an artist’s style and their artwork.</li>
+                            <li>Knowledge about different art styles and movements.</li>
+                            <li>Current art exhibit events.</li>
+                            <li>Receive information about latest art trends and news.</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container p-4 pt-5">
+                <div class="pl-5 pr-5">
+                    <h5 class="text-center p-2 font-weight-bold">High-Fidility Prototype</h5>
+                    <img src="images/curated-high.png" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="text-center">
+                    <div class="button">
+                        <a href="https://xd.adobe.com/view/90fb492c-def7-4e67-9c18-decad0d79cb1-c5a8/"><button
+                                class="submit">Go To Prototype</button></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+            <footer>
+                <h2 class="connect">Let's Connect</h2>
+                <p class="connect">Whether you have inquiries, or you just want to say hi!</p>
+                <p class="connect">mguxuidesigns@gmail.com</p>
+                <ul class="footer-ul">
+                    <li class="connect-li">LINKEDIN</li>
+                    <li class="connect-li">BEHANCE</li>
+                    <li class="connect-li">DRIBBBLE</li>
+                </ul>
+                <div class="footerBar">
+                    <p class="copyright-words">All content copyright Melissa Garica</p>
+                    <img class="copyright" src="images/icon_copyright.svg">
+                </div>
+            </footer>
 </body>
+
 </html>
